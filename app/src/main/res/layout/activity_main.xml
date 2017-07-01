@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context="com.example.abhi.arrayadapter.MainActivity">
+
+
+    <Button
+        android:id="@+id/ascen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ascending"
+        android:background="@color/green"
+        android:textColor="@color/Red"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="59dp"
+        android:padding="10dp"
+        android:onClick="asc"
+        />
+
+    <Button
+        android:id="@+id/descen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ascen"
+        android:layout_marginEnd="64dp"
+        android:text="Descending"
+        android:background="@color/green"
+        android:textColor="@color/Red"
+        android:padding="10dp"
+        android:onClick="des"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ascen"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/lv"/>
+
+
+</RelativeLayout>
